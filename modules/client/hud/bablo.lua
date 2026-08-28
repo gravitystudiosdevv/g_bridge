@@ -1,0 +1,16 @@
+Gravity.RegisterClientProvider('hud', 'bablo-hud', {
+    show = function() exports['bablo-hud']:ShowHud() end,
+    hide = function() exports['bablo-hud']:HideHud() end,
+    toggle = function() exports['bablo-hud']:ToggleHud() end,
+    isVisible = function() return exports['bablo-hud']:IsHudVisible() end,
+    setElementVisible = function(id, visible) exports['bablo-hud']:SetComponentVisible(id, visible) end,
+    toggleCinematic = function() exports['bablo-hud']:ToggleCinematic() end,
+    setCinematic = function(state) exports['bablo-hud']:SetCinematic(state) end,
+    isCinematic = function() return exports['bablo-hud']:IsCinematicActive() end,
+    isSeatbeltOn = function() return exports['bablo-hud']:IsSeatbeltOn() end,
+    getStress = function() return exports['bablo-hud']:GetStress() end,
+    setStress = function(value) exports['bablo-hud']:SetStress(value) end,
+    addStress = function(amount) exports['bablo-hud']:AddStress(amount) end,
+    removeStress = function(amount) exports['bablo-hud']:RemoveStress(amount) end,
+    setRadarVisible = function(visible) exports['bablo-hud']:setRadarVisible(visible) end,
+})
